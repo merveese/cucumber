@@ -1,0 +1,240 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User is on the google home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6139713500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in on the google page",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.user_in_on_the_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-05T20:20:59.664Z",
+        "line": 5,
+        "name": "TC01_Iphone Search",
+        "description": "",
+        "id": "search-functionality;tc01-iphone-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2727788800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user search for iPhone",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.user_search_for_i_phone()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42983200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify the result has iPhone",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.verify_the_result_has_i_phone()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 708182600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.close_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@google_search"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User is on the google home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2499264500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in on the google page",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.user_in_on_the_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-05T20:21:09.420Z",
+        "line": 10,
+        "name": "TC02_tea pot Search",
+        "description": "",
+        "id": "search-functionality;tc02-tea-pot-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3533207800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user search for tea pot",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.user_search_for_tea_pot()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44750000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify the result has tea pot",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.verify_the_result_has_tea_pot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 665302000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.close_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@google_search"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User is on the google home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2568795600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in on the google page",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.user_in_on_the_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-05T20:21:16.182Z",
+        "line": 14,
+        "name": "TC03_flower Search",
+        "description": "",
+        "id": "search-functionality;tc03-flower-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepdefinitions.Google_Search_Step_Defs.user_search_for_flower(Google_Search_Step_Defs.java:45)\r\n\tat ✽.user search for flower(file:///C:/Users/pusku/IdeaProjects/cucumber-framework-21/./src/test/resources/features/first_feature_file.feature:15)\r\n",
+              "duration": 2992200,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "user search for flower",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.user_search_for_flower()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "verify the result has flower",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.verify_the_result_has_flower()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.close_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@google_search"
+          }
+        ]
+      }
+    ],
+    "name": "Search Functionality",
+    "description": "",
+    "id": "search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/first_feature_file.feature",
+    "tags": [
+      {
+        "name": "@google_search",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

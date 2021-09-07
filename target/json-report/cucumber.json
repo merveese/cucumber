@@ -1,0 +1,95 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User is on the google home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4374207100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in on the google page",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.user_in_on_the_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-05T20:41:14.215Z",
+        "line": 14,
+        "name": "TC03_flower Search",
+        "description": "",
+        "id": "search-functionality;tc03-flower-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2498798900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user search for flower",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.user_search_for_flower()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38983200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "verify the result has flower",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.verify_the_result_has_flower()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 708214700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.Google_Search_Step_Defs.close_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@google_search"
+          }
+        ]
+      }
+    ],
+    "name": "Search Functionality",
+    "description": "",
+    "id": "search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/first_feature_file.feature",
+    "tags": [
+      {
+        "name": "@google_search",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
