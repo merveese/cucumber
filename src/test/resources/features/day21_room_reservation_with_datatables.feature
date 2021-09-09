@@ -1,15 +1,23 @@
 @data_tables
 Feature: Room_reservation_with_datatables
-  Background: user_goes_to_application_login page
+#  Data Tables are handy for passing a list of values to a step definition:
+  Scenario: TC01_user_should_be_able_to_login_with_manager_profile
     Given user is on the application_login page
-
-  Scenario: user_should_be_able_to_login_with_manager_profile
     Given user enters manager_username and manager_password
-    |manager|Manager1!|
+      |manager|Manager1!|
+    Then capture the screenshot
     And clicks on login button
     And verify login "manager" is displayed
-
-    Scenario: TC02_user_should_be_able_to_navigate_reservation
-      And user navigates to create_room_reservation_page
-  Scenario: TC02_user_should_be_able_to_make_reservation
     And user navigates to create_room_reservation_page
+    Then capture the screenshot
+
+  Scenario: TC02_user_should_be_able_to_make_reservation
+    Given user enters all required fields
+      |IDUser |IDHotel |price|date_start|date_end|adult_amount|children_amount|contact_name|contact_phone|contact_emal  |notes|
+      |manager| Sierra |500  |08/01/2021|08/04/2021|2         |3              |john        |(999) 999-9999  |test@gmail.com |test|
+    And user clicks on the approved checkbox
+    And user clicks on the is_paid checkbox
+    And user clicks on the save_button
+    Then user verifies the success_message
+    Then capture the screenshot
+    Then close the application
