@@ -1,4 +1,4 @@
-@wipgi
+@wip @smoke
 Feature: Finding product on google search
   Background: user is navigate to google page
     Given user in on the google page
