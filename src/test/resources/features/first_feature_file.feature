@@ -1,4 +1,4 @@
-@google_search
+@google_search @regression
 Feature: Search Functionality
   Background: User is on the google home page
     Given user in on the google page
