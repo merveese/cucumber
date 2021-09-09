@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import com.github.javafaker.Faker;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.hu.De;
@@ -9,6 +10,9 @@ import org.openqa.selenium.support.ui.Select;
 import pages.DefaultPage;
 import pages.RoomReservationPage;
 import utilities.ReusableMethods;
+
+import java.io.IOException;
+import java.util.List;
 
 
 public class Room_Reservation_Step_Defs {
@@ -139,6 +143,31 @@ public class Room_Reservation_Step_Defs {
         Assert.assertEquals(roomReservationPage.actualSuccessMessage.getText(),string);
         roomReservationPage.okButton.click();
     }
+    @Given("user enters all required fields")
+    public void user_enters_all_required_fields(DataTable roomData) {
+        List<String> testData=roomData.row(1);
+        System.out.println(testData);//[manager, Sierra, 500, 08/01/2021, 08/04/2021, 2, 3, john, 999999999, test@gmail.com, test]
+        Select select = new Select(roomReservationPage.idUser);
+        select.selectByVisibleText(testData.get(0));
 
+
+        Select select1 =new Select(roomReservationPage.idHotelRoom);
+        select1.selectByVisibleText(testData.get(1));
+
+        roomReservationPage.price.sendKeys(testData.get(2));
+        roomReservationPage.dateStart.sendKeys(testData.get(3));
+        roomReservationPage.dateEnd.sendKeys(testData.get(4));
+        roomReservationPage.adultAmount.sendKeys(testData.get(5));
+        roomReservationPage.childrenAmount.sendKeys(testData.get(6));
+        roomReservationPage.nameAndSurname.sendKeys(testData.get(7));
+        roomReservationPage.contactPhone.sendKeys(testData.get(8));
+        roomReservationPage.contactEmail.sendKeys(testData.get(9));
+        roomReservationPage.notes.sendKeys(testData.get(10));
+    }
+
+    @Then("capture the screenshot")
+    public void capture_the_screenshot() throws IOException {
+        ReusableMethods.getScreenshot("Taking Screen Shot ");
+    }
 
 }
